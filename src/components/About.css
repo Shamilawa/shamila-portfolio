@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.about-container {
+    margin-top: 235px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 235px;
+    align-items: center;
+}
+
+.about-me-image {
+    background-color: var(--green);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+}
+
+.about-me-image:hover {
+    -webkit-animation: wobble-hor-top 0.8s both;
+    animation: wobble-hor-top 0.8s both;
+}
+
+.about-me-image img {
+    width: 375px;
+    mix-blend-mode: multiply;
+    filter: grayscale(20%) contrast(1);
+}
+
+.about-me-image img:hover {
+    mix-blend-mode: normal;
+    filter: none;   
+}
+
+.about-me-content {
+    padding-left: 150px;
+}
+
+.section-topic {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.section-topic h2 {
+    color: var(--lightest-slay);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.section-topic hr {
+    border: none;
+    width: 350px;
+    height: 0.5px;
+    background-color: var(--slate);
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.about-me-content p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--slate);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.about-me-content .highlighted-text {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.skill-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill {
+    display: flex;
+}
+
+.skill p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.skill .arrow-right {
+    color: var(--green);
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .about-container {
+        padding: 0;
+        display: block;
+    }
+
+    .about-me-content {
+        padding-left: 0;
+    }
+
+    .section-topic hr {
+        width: 100px;
+    }
+    
+    .about-me-image  {
+        display: none;
+    }
+
+    .about-me-content p {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    
+    .about-container {
+        padding: 0;
+        display: block;
+    }
+
+    .about-me-content {
+        padding-left: 0;
+    }
+
+    .section-topic hr {
+        width: 100px;
+    }
+    
+    .about-me-image  {
+        margin-bottom: 30px;
+    }
+
+    .about-me-content p {
+        font-size: 14px;
+    }
+
+    .about-me-image img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Keyframes for image hover*/
+@-webkit-keyframes wobble-hor-top {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(6deg);
+              transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(-6deg);
+              transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(3.6deg);
+              transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(-2.4deg);
+              transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(1.2deg);
+              transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+  @keyframes wobble-hor-top {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(6deg);
+              transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(-6deg);
+              transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(3.6deg);
+              transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(-2.4deg);
+              transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(1.2deg);
+              transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+  

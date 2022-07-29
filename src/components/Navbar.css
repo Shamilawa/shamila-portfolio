@@ -1,0 +1,142 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container img {
+    padding-top: 5px;
+}
+
+.nav-bar .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar li {
+    font-size: 13px;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.nav-bar li:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.linkOne {
+    animation: 300ms ease-out 0s 1 slideInFromTop;
+}
+
+.linkTwo {
+    animation: 350ms ease-in-out 0s 1 slideInFromTop;
+}
+
+.linkThree {
+    animation: 450ms ease-in-out 0s 1 slideInFromTop;
+}
+
+.linkFour {
+    animation: 500ms ease-in-out 0s 1 slideInFromTop;
+}
+
+.mobile-menu {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    margin-right: -500px;
+    align-items: flex-start;
+    background-color: var(--light-navy);
+    height: 100vh;
+    width: 300px;
+    padding-top: 100px;
+    padding-left: 50px;
+    transition: 500ms ease-in;
+    z-index: 1;
+}
+
+.mobile-menu li {
+    padding-bottom: 50px;
+}
+
+.nav-bar li span {
+    color: var(--green);
+}
+
+.nav-bar ul button {
+    color: var(--green);
+    padding: 8px 17px;
+    border: 1px solid #64ffda;
+    border-radius: 5px;
+    background-color: transparent;
+    animation: 550ms ease-in-out 0s 1 slideInFromTop;
+}
+
+.nav-bar ul button:hover {
+    background: var(--green-tint);
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+.hamburger-menu .dash {
+    border: 1px solid #64ffda;
+    width: 23px;
+    margin: 5px;
+}
+
+/* Tap responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-bar .menu {
+        visibility: hidden;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .one {
+        transition: ease-in-out 500ms;
+    }
+
+    .two {
+        transition: ease-in-out 500ms;
+    }
+
+    .three {
+        opacity: 100;
+        transition: ease-out 500ms
+    }
+}
+
+/* Mobile Resposive Styles */
+@media screen and (max-width: 550px) {
+    .nav-bar .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/* Animations */
+/* Nav Bar Animation */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-45px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100;
+    }
+}

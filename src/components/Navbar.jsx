@@ -38,17 +38,17 @@ function Navbar() {
             </div>
             <nav className='nav-bar'>
                 <ul className='menu'>
-                    <li className='linkOne'>About</li>
-                    <li className='linkTwo'>Experience</li>
-                    <li className='linkThree'>Work</li>
-                    <li className='linkFour'>Contact</li>
-                    <button>Resume</button>
+                    <a href="#about-container"><li className='linkOne'>About</li></a>
+                    <a href="#work-container"><li className='linkTwo'>Experience</li></a>
+                    <a href="#featured-container"><li className='linkThree'>Projects</li></a>
+                    <a href="#call-to-action-container"><li className='linkFour'>Contact</li></a>
+                    <a href="https://drive.google.com/file/d/1bbuky4R2i-rU2UEiIxnV-i6U9eRD1M4k/view" target="_blank"><button>Resume</button></a>
                 </ul>
                 <ul className='mobile-menu' style={isHamburgerClick ? styles.mobileMenu : null}>
-                    <li> About</li>
-                    <li> Experience</li>
-                    <li> Work</li>
-                    <li> Contact</li>
+                    <a href="#about-container"><li> About</li></a>
+                    <a href="http://"><li> Experience</li></a> 
+                    <a href="http://"><li> Work</li></a> 
+                    <a href="http://"><li> Contact</li></a> 
                     <button>Resume</button>
                 </ul>
             </nav>

@@ -1,7 +1,7 @@
 .bulb-img {
     position: absolute;
     margin-top: -170px;
-    margin-left: 875px;
+    margin-left: 850px;
     z-index: 6;
     -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -10,7 +10,7 @@
 .bulb-flick-img {
     position: absolute;
     margin-top: -170px;
-    margin-left: 551px;
+    margin-left: 526px;
     pointer-events: none;
     -webkit-animation: flicker-4 2.5s linear 2 both;
     animation: flicker-4 2.5s linear 2 both;
@@ -97,7 +97,6 @@
 
 .hero-content .call-to-action {
     display: flex;
-    color: var(--green);
     padding: 8px 17px;
     border: 1px solid #64ffda;
     border-radius: 5px;
@@ -106,6 +105,11 @@
     justify-content: space-around;
     padding: 15px 25px;
     animation: 1400ms ease-in-out 0ms 1 slideInFromBot;
+}
+
+.hero-content .call-to-action a {
+    text-decoration: none;
+    color: var(--green);
 }
 
 .hero-content .call-to-action:hover {

@@ -1,0 +1,71 @@
+.table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.table-data .year {
+    flex: 1;
+    color: var(--green);
+    font-weight: 100;
+}
+
+.table-data .title {
+    flex: 3;
+    font-family: 'Poppins', sans-serif;
+    color: var(--slate);
+}
+
+.table-data .category {
+    flex: 2;
+    font-family: 'Poppins', sans-serif;
+    color: var(--slate);
+}
+
+.table-data .technologies {
+    flex: 3;
+    color: var(--slate);
+    font-weight: 400;
+}
+
+.table-data .links {
+    flex: 1;
+}
+
+.table-data .links a {
+    color: var(--slate);
+    text-decoration: none;
+}
+
+.table-data .links .icons {
+    transition: 200ms ease-in-out;
+}
+
+.table-data .links .icons:hover {
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+    color: var(--green);
+}
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .table-data .category {
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .table-data .category {
+        display: none;
+    }
+    
+    .table-data .technologies {
+        display: none;
+    }
+
+}

@@ -58,6 +58,10 @@
     font-size: 15px;
 }
 
+.project-card .project-inner-content .project-technologies p{
+    transition: 0.2s ease-in;
+}
+
 .project-card .project-inner-content .project-technologies p:hover {
     color: var(--green);
     transform: scale(1.1);
@@ -68,6 +72,7 @@
 .project-card .project-inner-content .project-icons .icons {
     padding-right: 20px;
     color: var(--slate);
+    transition: 0.2s ease-in;
 }
 
 .project-card .project-inner-content .project-icons .icons:hover {
@@ -79,11 +84,17 @@
 
 .project-img {
     flex: 1;
-    /* width: 800px;
-    height: 800px; */
-    /* background-image: url("../../assets/car.jpg"); */
     background-size: cover;
+    transition: 200ms ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+.project-img:hover {
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+}
+
 
 
 
